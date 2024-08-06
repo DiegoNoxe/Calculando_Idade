@@ -1,0 +1,79 @@
+*
+{
+    padding: 0; margin:  0;
+}
+
+body
+{
+    height: 55rem;
+    background-image: url(age.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header
+{
+    background-color: #000000;
+}
+
+header h1 
+{
+    text-align: center;
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.Atual{
+    position: relative;
+    top: 20rem;
+    left: 49rem;
+}
+
+.Nascimento{
+    position: relative;
+    top: 20rem;
+    left: 49rem;
+}
+
+.send{
+    position: relative;
+    top: 20rem;
+    left: 49rem;
+    width: 6rem;
+    font-weight: bolder;
+    background-color: aqua;
+    transition: 4s;
+}
+
+.send:hover{
+    position: relative;
+    top: 20rem;
+    left: 49rem;
+    width: 6rem;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: rgb(10, 68, 68);
+}
+
+.result{
+    color: #ffffff;
+    position: relative;
+    top: 25rem;
+    left: 23rem;
+    display: inline-block;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.error{
+    color: #ffffff;
+    position: relative;
+    top: 25rem;
+    left: 18rem;
+    display: inline-block;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

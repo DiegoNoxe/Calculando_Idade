@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Idade</h1>
+    </header>
+    
+    <main>
+        <input  type="number" id="anoAtual" class="Atual" placeholder="Digite o ano atual">
+        <input  type="number" id="anoNascimento" class="Nascimento" placeholder="Data de nascimento">
+
+        <button id="Enviar" class="send">Enviar</button>
+        
+        <h1     id="resultado" class="result"></h1>
+    </main>
+    
+    <script>
+
+    const anoAtualInput = document.getElementById('anoAtual'); 
+    const anoNascimentoInput = document.getElementById('anoNascimento'); 
+    const enviarButton = document.getElementById('Enviar');
+    const resultado = document.getElementById('resultado');
+
+        function calcularIdade() 
+        {
+
+            const anoAtual = parseInt(anoAtualInput.value);
+            const anoNascimento = parseInt(anoNascimentoInput.value);
+            const idade = anoAtual - anoNascimento;
+
+            if(anoAtual < anoNascimento)
+            
+            {
+                resultado.textContent = "Idade maior que o ano atual!"
+                resultado.classList.add('error');
+                resultado.classList.remove('result');
+                return;
+            }
+
+            resultado.textContent = `Sua idade é: ${idade} anos`;
+        }
+
+        enviarButton.addEventListener('click', calcularIdade);
+    </script>
+</body>
+</html>
