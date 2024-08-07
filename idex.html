@@ -19,6 +19,10 @@
         
         <h1     id="resultado" class="result"></h1>
     </main>
+
+    <footer>
+        <p>Feito por <a target="_blank" href="https://github.com/DiegoNoxe">Diego Nascimento</a></p>
+    </footer>
     
     <script>
 
@@ -43,7 +47,26 @@
                 return;
             }
 
-            resultado.textContent = `Sua idade é: ${idade} anos`;
+            if(idade == 0)
+            
+            {
+                resultado.textContent = `Você tem alguns meses de vida!`;
+                resultado.classList.add('error');
+                resultado.classList.remove('result');
+                return;
+            }
+
+            if(idade >= 123)
+            
+            {
+                resultado.textContent = `Não há comprovação de qualquer pessoa que tenha vivido por mais de 122 anos! Idade invalida`;
+                resultado.classList.add('errorTwo');
+                resultado.classList.remove('result');
+                return;
+            }
+
+
+            resultado.textContent = `Você têm ${idade} de idade!`;
         }
 
         enviarButton.addEventListener('click', calcularIdade);

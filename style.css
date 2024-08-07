@@ -15,10 +15,12 @@ body
 header
 {
     background-color: #000000;
+    height: 4rem;
 }
 
 header h1 
 {
+    font-size: 3.2rem;
     text-align: center;
     color: #ffffff;
     font-weight: bolder;
@@ -62,7 +64,7 @@ header h1
     color: #ffffff;
     position: relative;
     top: 25rem;
-    left: 23rem;
+    left: 22rem;
     display: inline-block;
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -77,3 +79,41 @@ header h1
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.errorTwo
+{
+    color: #ffffff;
+    position: absolute;
+    top: 28rem;
+    left: 52rem;
+    font-size: 1rem;
+    width: 20rem; 
+    text-align: justify;
+    display: inline-block;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer{
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    background-color: #000000;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+footer p{
+    text-align: center;
+    color: aliceblue;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(38, 129, 209);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
