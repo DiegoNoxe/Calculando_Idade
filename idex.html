@@ -5,71 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Idade</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="age.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Calculadora de Idade</h1>
+        <h1>C<span class="text-flicker-in-glow">a</span>lcul<span class="text-flicker-in-glow">a</span>dor<span class="text-flicker-in-glow" >a</span> de Id<span class="text-flicker-in-glow">a</span>de</h1>
     </header>
     
     <main>
         <input  type="number" id="anoAtual" class="Atual" placeholder="Digite o ano atual">
         <input  type="number" id="anoNascimento" class="Nascimento" placeholder="Data de nascimento">
-
         <button id="Enviar" class="send">Enviar</button>
+        <button id="Limpar" class="send">limpar</button>
         
-        <h1     id="resultado" class="result"></h1>
+        <h1 id="resultado" class="result"></h1>
     </main>
 
     <footer>
         <p>Feito por <a target="_blank" href="https://github.com/DiegoNoxe">Diego Nascimento</a></p>
     </footer>
-    
-    <script>
 
-    const anoAtualInput = document.getElementById('anoAtual'); 
-    const anoNascimentoInput = document.getElementById('anoNascimento'); 
-    const enviarButton = document.getElementById('Enviar');
-    const resultado = document.getElementById('resultado');
-
-        function calcularIdade() 
-        {
-
-            const anoAtual = parseInt(anoAtualInput.value);
-            const anoNascimento = parseInt(anoNascimentoInput.value);
-            const idade = anoAtual - anoNascimento;
-
-            if(anoAtual < anoNascimento)
-            
-            {
-                resultado.textContent = "Idade maior que o ano atual!"
-                resultado.classList.add('error');
-                resultado.classList.remove('result');
-                return;
-            }
-
-            if(idade == 0)
-            
-            {
-                resultado.textContent = `Você tem alguns meses de vida!`;
-                resultado.classList.add('error');
-                resultado.classList.remove('result');
-                return;
-            }
-
-            if(idade >= 123)
-            
-            {
-                resultado.textContent = `Não há comprovação de qualquer pessoa que tenha vivido por mais de 122 anos! Idade invalida`;
-                resultado.classList.add('errorTwo');
-                resultado.classList.remove('result');
-                return;
-            }
-
-
-            resultado.textContent = `Você têm ${idade} de idade!`;
-        }
-
-        enviarButton.addEventListener('click', calcularIdade);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
