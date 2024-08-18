@@ -122,6 +122,10 @@ select{
   color: white;
 }
 
+option{
+  font-weight: bold;
+}
+
 footer{
     width: 100%;
     bottom: 0px;
@@ -143,6 +147,10 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
+}
+
+.corz{
+  color: chartreuse;
 }
 
 

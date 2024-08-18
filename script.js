@@ -1,35 +1,32 @@
 const translations = {
     'pt-br': {
-        title: 'Calculadora de Idade',
         anoAtualPlaceholder: 'Digite o ano atual',
         anoNascimentoPlaceholder: 'Data de nascimento',
         enviarButton: 'Enviar',
         limparButton: 'Limpar',
         resultadoText: '',
-        pe: 'Feito por Diego'
+        pe: 'Feito por <span class="corz"><a target="_blank" href="https://github.com/DiegoNoxe">Diego Nascimento</a</span>'
     },
     'en': {
-        title: 'Age Calculator',
         anoAtualPlaceholder: 'Enter the current year',
         anoNascimentoPlaceholder: 'Year of birth',
         enviarButton: 'Submit',
         limparButton: 'Clear',
         resultadoText: '',
-        pe: 'Made by: Diego'
+        pe: 'Made by: <span style="color:lightblue"><a target="_blank" href="https://github.com/DiegoNoxe">Diego Nascimento</a</span>'
     }
 };
     
     
 function updateText(language) {
     const text = translations[language];
-    
-    document.getElementById('title').innerText = text.title;
+
     document.getElementById('anoAtual').placeholder = text.anoAtualPlaceholder;
     document.getElementById('anoNascimento').placeholder = text.anoNascimentoPlaceholder;
     document.getElementById('Enviar').innerText = text.enviarButton;
     document.getElementById('Limpar').innerText = text.limparButton;
     document.getElementById('resultado').innerText = text.resultadoText;
-    document.getElementById('pe').innerText = text.pe;
+    document.getElementById('pe').innerHTML = text.pe;
 }
 
 
