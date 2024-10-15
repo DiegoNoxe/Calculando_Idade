@@ -19,7 +19,7 @@ body
 
 header
 {
-    background-color: #000000;
+    background-color: #000000e3;
     height: 4rem;
 }
 
@@ -130,7 +130,7 @@ footer{
     width: 100%;
     bottom: 0px;
     position: fixed;
-    background-color: #000000;
+    background-color: #0805053a;
     font-weight: bolder;
     font-size: 1.3rem;
 }
